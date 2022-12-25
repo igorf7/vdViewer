@@ -85,8 +85,8 @@ VdViewer::~VdViewer()
 }
 
 /**
- * @brief MainWindow::onArrowKeyPressed
- * @param direction
+ * @brief VdViewer::onKeyPressed
+ * @param key
  */
 void VdViewer::onKeyPressed(int key)
 {
@@ -124,7 +124,7 @@ void VdViewer::onKeyPressed(int key)
 }
 
 /**
- * @brief MainWindow::onResizeChart
+ * @brief VdViewer::onResizeChart
  */
 void VdViewer::onResizeChart()
 {
@@ -132,7 +132,7 @@ void VdViewer::onResizeChart()
 }
 
 /**
- * @brief MainWindow::setDefaultSettings
+ * @brief VdViewer::setDefaultSettings
  */
 void VdViewer::setDefaultSettings()
 {
@@ -141,7 +141,7 @@ void VdViewer::setDefaultSettings()
 }
 
 /**
- * @brief MainWindow::closeAct_triggered
+ * @brief VdViewer::closeAct_triggered
  */
 void VdViewer::closeAct_triggered()
 {
@@ -154,7 +154,7 @@ void VdViewer::closeAct_triggered()
 }
 
 /**
- * @brief MainWindow::openFileAct_triggered
+ * @brief VdViewer::openAct_triggered
  */
 void VdViewer::openAct_triggered()
 {
@@ -260,7 +260,7 @@ void VdViewer::openAct_triggered()
 }
 
 /**
- * @brief MainWindow::onShowGraphClicked
+ * @brief VdViewer::onShowGraphClicked
  */
 void VdViewer::onShowGraphClicked()
 {
@@ -396,7 +396,7 @@ void VdViewer::onShowGraphClicked()
 }
 
 /**
- * @brief MainWindow::onQuitAct_triggered
+ * @brief VdViewer::onQuitAct_triggered
  */
 void VdViewer::onQuitAct_triggered()
 {
@@ -404,7 +404,7 @@ void VdViewer::onQuitAct_triggered()
 }
 
 /**
- * @brief MainWindow::setHeadStrAct_triggered
+ * @brief VdViewer::setCsvSettingsAct_triggered
  */
 void VdViewer::setCsvSettingsAct_triggered()
 {
@@ -454,7 +454,7 @@ void VdViewer::setCsvSettingsAct_triggered()
 }
 
 /**
- * @brief MainWindow::onSaveSettingsClicked
+ * @brief VdViewer::onSaveSettingsClicked
  */
 void VdViewer::onSaveSettingsClicked()
 {
@@ -465,7 +465,7 @@ void VdViewer::onSaveSettingsClicked()
 }
 
 /**
- * @brief MainWindow::onDefaultStateChanged
+ * @brief VdViewer::onDefaultStateChanged
  */
 void VdViewer::onDefaultStateChanged()
 {
@@ -487,7 +487,7 @@ void VdViewer::onDefaultStateChanged()
 }
 
 /**
- * @brief createLabelsLayout
+ * @brief VdViewer::setupLabel
  * @param label
  */
 void VdViewer::setupLabel(QLabel *label)
@@ -503,7 +503,7 @@ void VdViewer::setupLabel(QLabel *label)
 }
 
 /**
- * @brief MainWindow::fillPrmLabels
+ * @brief VdViewer::fillPrmLabels
  */
 void VdViewer::fillPrmLabels()
 {
@@ -520,7 +520,7 @@ void VdViewer::fillPrmLabels()
 }
 
 /**
- * @brief MainWindow::showLegendAct_toggled
+ * @brief VdViewer::showLegendAct_toggled
  * @param checked
  */
 void VdViewer::showLegendAct_toggled(bool checked)
@@ -531,7 +531,7 @@ void VdViewer::showLegendAct_toggled(bool checked)
 }
 
 /**
- * @brief MainWindow::onManual_triggered
+ * @brief VdViewer::manualAct_triggered
  */
 void VdViewer::manualAct_triggered()
 {
@@ -568,7 +568,7 @@ void VdViewer::ansiAct_triggered()
 }
 
 /**
- * @brief MainWindow::aboutAct_triggered
+ * @brief VdViewer::aboutAct_triggered
  */
 void VdViewer::aboutAct_triggered()
 {
@@ -602,7 +602,7 @@ void VdViewer::aboutAct_triggered()
 }
 
 /**
- * @brief MainWindow::readSettings
+ * @brief VdViewer::readSettings
  */
 void VdViewer::readSettings()
 {
@@ -620,7 +620,7 @@ void VdViewer::readSettings()
 }
 
 /**
- * @brief MainWindow::writeSettings
+ * @brief VdViewer::writeSettings
  */
 void VdViewer::writeSettings()
 {
