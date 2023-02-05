@@ -105,6 +105,9 @@ void CsvReader::csvRead(QList<QStringList> &list)
         if (utf8Enc) {
             in.setCodec(QTextCodec::codecForName("UTF-8"));
         }
+        else {
+            in.setCodec(QTextCodec::codecForName("CP1251"));
+        }
 
         while (!in.atEnd()) {
             QString line(in.readLine().simplified());

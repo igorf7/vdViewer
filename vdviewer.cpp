@@ -32,7 +32,7 @@ VdViewer::VdViewer(QWidget *parent) : QMainWindow(parent)
     /* Menu Encoding */
     QMenu* menuEncoding = menuBar()->addMenu(tr("&Кодировка"));
     utf8Act = new QAction(tr("&UTF-8"), this);
-    ansiAct = new QAction(tr("&ANSI"), this);
+    ansiAct = new QAction(tr("&CP1251"), this);
     utf8Act->setCheckable(true);
     utf8Act->setChecked(isUtf8Encoding);
     ansiAct->setCheckable(true);

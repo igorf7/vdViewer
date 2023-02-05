@@ -27,11 +27,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     res.qrc
 
-win32: RC_ICONS += \
-    images/diag1.ico
-
-win32:{
-    QMAKE_TARGET_COMPANY = IGORF
-    QMAKE_TARGET_PRODUCT = vdViewer
-    QMAKE_TARGET_COPYRIGHT = IGORF
-}
+RC_ICONS += images/diag1.ico
