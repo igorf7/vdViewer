@@ -587,7 +587,7 @@ void VdViewer::aboutAct_triggered()
     QLabel* textLabel = new QLabel;
     QVBoxLayout* aboutLayot = new QVBoxLayout;
     textLabel->setText(tr("<p>&copy; Программа распространяется безвозмездно, то есть даром.</p>"
-                          "<h3>Версия 1.0.1</h3>"));
+                          "<h3>Версия 1.0.2</h3>"));
 
     QLabel* refLabel = new QLabel;
     refLabel->setText(tr("<a href=mailto:igorf777@gmail.com>Книга жалоб и предложений</a>"));
