@@ -514,7 +514,7 @@ void VdViewer::fillPrmLabels()
         double a = prmStrList.at(prmVisible.at(0)).at(trackLinePosX + prmNamesCount).toDouble(),
                b = prmStrList.at(prmVisible.at(1)).at(trackLinePosX + prmNamesCount).toDouble();
         if (deltaLabel != nullptr) {
-            deltaLabel->setText(tr("Разность: ") + QString::number(a - b));
+            deltaLabel->setText(tr("Разность: ") + QString::number(b - a));
         }
     }
 }
