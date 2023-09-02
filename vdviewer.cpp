@@ -15,7 +15,7 @@ VdViewer::VdViewer(QWidget *parent) : QMainWindow(parent)
 {
     readSettings();
     setWindowTitle("vdViewer");
-    this->resize(winWidth, winHeight);
+    this->resize(980, 640);
     setWindowIcon(QIcon(":/images/diag1.png"));
 
     /* Menu File */
@@ -49,7 +49,6 @@ VdViewer::VdViewer(QWidget *parent) : QMainWindow(parent)
     QMenu* menuSettings = menuBar()->addMenu(tr("&Настройки"));
     menuSettings->addAction(showLegend);
     menuSettings->addAction(csvSettings);
-
 
     /* Menu Help */
     QAction* manualAct = new QAction(tr("&Инструкция"), this);
@@ -609,8 +608,6 @@ void VdViewer::readSettings()
     QSettings settings("vdviewer.ini", QSettings::IniFormat);
 
     settings.beginGroup("Settings");
-    winWidth = settings.value("winWidth", 930).toInt();
-    winHeight = settings.value("winHeight", 600).toInt();
     prmNamesLine = settings.value("prmNamesLine", 3).toInt();
     prmNamesCount = settings.value("prmNamesCount", 3).toInt();
     defaultSettings = settings.value("defaultSettings", true).toBool();
@@ -626,13 +623,8 @@ void VdViewer::writeSettings()
 {
     QSettings settings("vdviewer.ini", QSettings::IniFormat);
 
-    winWidth = this->width();
-    winHeight = this->height();
-
     settings.beginGroup("Settings");
     settings.setValue("prmNamesLine", prmNamesLine);
-    settings.setValue("winWidth", winWidth);
-    settings.setValue("winHeight", winHeight);
     settings.setValue("prmNamesCount", prmNamesCount);
     settings.setValue("defaultSettings", defaultSettings);
     settings.setValue("utf8Encoding", utf8Act->isChecked());

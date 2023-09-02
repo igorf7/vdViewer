@@ -51,7 +51,6 @@ private:
 
     QString pathLogs;
     bool defaultSettings;
-    int winWidth, winHeight;
     int prmRowCount = 0;
     int prmNamesLine;
     int prmNamesCount;
